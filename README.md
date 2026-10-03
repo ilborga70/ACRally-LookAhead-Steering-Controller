@@ -1,8 +1,13 @@
 # ACRally-LookAhead-Steering-Controller
 LookAhead Steering Controller is a lightweight, standalone suite that converts your steering wheel rotation into toward the inside of a corner, without needing to install or run OpenTrack.
 
-<img width="1376" height="768" alt="1790547821033" src="https://github.com/user-attachments/assets/bdf9f6c3-6b7b-4ef8-9e18-db0d2ad514b3" />
+🇬🇧 What's New in Version 0.9.0.0
+- Dynamic Apex Roll Tilt: Added natural camera roll/tilt toward the corner apex when steering.
+- UI Controls: Added an ON/OFF toggle for the roll tilt along with an intensity percentage adjustment slider/spinbox.
+- Complete UDP Telemetry: Real-time display of both Yaw and Roll values sent to OpenTrack at 60Hz.
+- JSON Configuration Save: Integrated automatic saving and loading for the Roll Tilt settings in the JSON configuration file.
 
+<img width="1357" height="1384" alt="ACRally LookAhead Steering Controller v0 9 0 0" src="https://github.com/user-attachments/assets/e46101e0-035d-4456-a570-e58c7b0099d5" />
 
 🚀 Quick Installation (First Time Only)
 1. Download the mod's .zip archive.
