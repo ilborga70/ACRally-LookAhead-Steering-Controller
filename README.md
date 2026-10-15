@@ -118,7 +118,6 @@ You can also see that the whole `D:\` folder is listed. Sim-racers often do this
 
 🔗 **Check the full safety report here:** [Jotti's Malware Scan Report](https://virusscan.jotti.org/it-IT/filescanjob/g84ynyzizw)
 
-
 ---
 
 ## 📜 Intellectual Property & Attribution Notice
