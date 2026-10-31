@@ -1,5 +1,7 @@
 # 🏎️ ACRally LookAhead Steering Controller
 
+![1000092343](https://github.com/user-attachments/assets/4e8fac16-2749-4251-aad5-74b3cfc6dd10)
+
 > **Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
 > Developed by **ilborga70**
 
