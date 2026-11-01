@@ -66,26 +66,8 @@ Open OpenTrack and set **Input** to `UDP over network` (Port `4242`) and **Outpu
 #### A. Options → Output Matrix
 Configure the mapping matrix so a single profile works universally across both **LHD** and **RHD** vehicles:
 
-| Destination | Source | Pre-invert | Post-invert |
-| :--- | :--- | :---: | :---: |
-| **Yaw** | `Yaw` | ☐ | ☐ |
-| **Pitch** | `Roll` | ☐ | ☐ |
-| **Roll** | `Roll` | ☐ | ☐ |
-| **X** | `Disabled` | ☐ | ☐ |
-| **Y** | `Disabled` | ☐ | ☐ |
-| **Z** | `Disabled` | ☐ | ☐ |
+<img width="2041" height="714" alt="New-opentrack-setup" src="https://github.com/user-attachments/assets/aebebb4a-fead-4a9f-af43-c5a7919dc019" />
 
-#### B. Options → Filter Setup
-Select the **Accela + Hamilton Filter** and set the parameters as follows:
-- **Rotation filtering (Yaw, Pitch, Roll):**
-  - **Smoothing:** `1.5°`
-  - **Deadzone:** `0.03°`
-- **Position filtering (X, Y, Z):**
-  - **Smoothing:** `1mm`
-  - **Deadzone:** `0.1mm`
-- **Rotation Smoothing (Zoomed):**
-  - **Max Added:** `0°`
-  - **Max Z:** `9.6mm`
 
 ---
 
