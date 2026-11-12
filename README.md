@@ -30,18 +30,6 @@ A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate r
 
 ---
 
-## 🎮 How to Use
-
-1. In the game folder, run `LookAhead Steering Controller.exe`.
-2. Select your device/steering wheel from the drop-down menu.
-3. Adjust the desired sensitivity (recommended starting at 5% for natural movement) and click **Apply Real-Time**.
-4. Leave the program open and launch **Assetto Corsa Rally** from Steam.
-5. Get in the car and switch to **Cockpit/Helmet View**.
-6. Set the actual degrees of the car in use in your driving controller, for example, Lancia Delta (`720°`).
-7. Also set the actual degrees of the car in use in the `LookAhead Steering Controller` program, for example, Lancia Delta (`720°`).
-
----
-
 ## 🛠️ Step-by-Step Setup Guide Without Mod (`dinput8.dll` and `AssettoCorsaRallyHeadTracking.asi`)
 
 > ℹ️ **Notice:** This manual standalone setup guide without mod files will be available as soon as the developers at **SuperNova** include native TrackIR support in an upcoming update.
