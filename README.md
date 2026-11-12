@@ -1,6 +1,6 @@
 # 🏎️ ACRally LookAhead Steering Controller
 
-<img width="994" height="1072" alt="1000092343" src="https://github.com/user-attachments/assets/6fc6eded-94d5-49a8-addd-4e978ecc64e5" />
+<img width="800" height="800" alt="1000092343" src="https://github.com/user-attachments/assets/6fc6eded-94d5-49a8-addd-4e978ecc64e5" />
 
 > **Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
 > *Developed by ilborga70*
@@ -53,7 +53,7 @@ Open OpenTrack and set **Input** to `UDP over network` (Port `4242`) and **Outpu
 #### A. Options → Output Matrix
 Configure the mapping matrix so a single profile works universally across both LHD and RHD vehicles.
 
-<img width="2041" height="714" alt="New-opentrack-setup" src="https://github.com/user-attachments/assets/1fe6aa41-39e4-4d23-abe0-0bb33232063e" />
+<img width="2560" height="1080" alt="New-opentrack-setup" src="https://github.com/user-attachments/assets/1fe6aa41-39e4-4d23-abe0-0bb33232063e" />
 
 ### 3. Run & Drive
 1. Click **Start** inside OpenTrack.
@@ -86,7 +86,7 @@ Since the file was compiled using Win-PS2EXE, any alerts are due to the nature o
 
 🔗 **Check the full safety report here:** [Jotti's Malware Scan Report](https://virusscan.jotti.org/it-IT/filescanjob/g84ynyzizw)
 
-![1000092622](https://github.com/user-attachments/assets/f22a83c0-4dee-49ef-957b-4acb7290bf9d)
+<img width="700" height="752" alt="jotti" src="https://github.com/user-attachments/assets/914dda32-7ae8-48f0-ad6d-f7c2c24fece6" />
 
 ---
 
