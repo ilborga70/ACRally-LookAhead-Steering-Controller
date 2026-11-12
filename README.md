@@ -2,7 +2,7 @@
 
 <img width="994" height="1072" alt="1000092343" src="https://github.com/user-attachments/assets/6fc6eded-94d5-49a8-addd-4e978ecc64e5" />
 
-**Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
+> **Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
 *Developed by ilborga70*
 
 A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate realistic head and camera movement in Assetto Corsa Rally without requiring VR headsets or head-tracking hardware.
