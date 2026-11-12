@@ -47,7 +47,7 @@ A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate r
 
 > 💡 **Important:** Ensure that the steering lock degrees set in the LookAhead Steering Controller, in the in-game car setup, and in your physical wheelbase software are **100% identical** for optimal telemetric precision and response.
 
-### 3. OpenTrack Universal Output Mapping
+### 2. OpenTrack Universal Output Mapping
 Open OpenTrack and set **Input** to `UDP over network` (Port `4242`) and **Output** to `freetrack 2.0 Enhanced`.
 
 #### A. Options → Output Matrix
@@ -55,7 +55,7 @@ Configure the mapping matrix so a single profile works universally across both L
 
 <img width="2041" height="714" alt="New-opentrack-setup" src="https://github.com/user-attachments/assets/1fe6aa41-39e4-4d23-abe0-0bb33232063e" />
 
-### 4. Run & Drive
+### 3. Run & Drive
 1. Click **Start** inside OpenTrack.
 2. Verify the status in the LookAhead Steering Controller's System Process Status diagnostic panel.
 3. Launch **Assetto Corsa Rally** and scendi in pista! 🏎️💨
