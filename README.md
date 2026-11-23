@@ -1,38 +1,54 @@
 # ACRally LookAhead Steering Controller
 
-<img width="800" height="800" alt="1000092343" src="https://github.com/user-attachments/assets/6fc6eded-94d5-49a8-addd-4e978ecc64e5" />
+<img width="1393" height="746" alt="RBR LookAhead Steering Controller v1 2 0 0" src="https://github.com/user-attachments/assets/2d351ee3-cec5-4653-bc41-f6d503d41506" />
 
 > **Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
 > *Developed by ilborga70*
 
 A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate realistic head and camera movement in Assetto Corsa Rally without requiring VR headsets or head-tracking hardware.
 
----
+## RBR LookAhead Steering Controller v1.2.0.0
 
-## 🆕 What's New in Version 0.9.0.0
-
-- **Dynamic Apex Roll Tilt:** Added natural camera roll/tilt toward the corner apex when steering for enhanced immersion during high-speed cornering and drifting.
-- **UI Controls:** Added an **ON/OFF toggle** for the Roll Tilt feature, along with an intensity percentage adjustment slider/spinbox.
-- **Complete UDP Telemetry:** Real-time visual display in the GUI for both **Yaw** and **Roll** values sent directly to OpenTrack at 60Hz.
-- **JSON Configuration Persistence:** Integrated automatic saving and loading for the Roll Tilt settings into the project's `.json` configuration file.
+### 🇬🇧 What's New & Fixes
+* **Fixed FFB Bumpstop Yaw Inversion (End-Stop Spike Protection):** Resolved an issue on DirectInput steering wheels (e.g., Fanatec CSL bases) where Force Feedback oscillations at full lock caused raw axis spikes (`dwXpos` / `dwRpos`), triggering sudden camera inversion to the opposite side.
+* **Raw Input Delta Filter:** Added a frame-to-frame delta threshold in the 60Hz background polling loop to ignore instantaneous full-scale signal jumps caused by bumpstop impacts.
+* **Axis Boundary Clamping:** Enforced strict clamping within the configured wheel lock range (`±WheelLock / 2`) and final UDP output values (`Yaw`, `Pitch`, `Roll`).
 
 ---
 
-## 🚀 Quick Installation (First Time Only)
+### 🇬🇧 New Features & UI Refresh
+* **Complete Interface Redesign (Modern Dark/Light UI):** Full visual overhaul of all controls in a modern flat style featuring Segoe UI typography and refined color palettes for both Light and Dark themes.
+* **Advanced Interactive Sliders:** Replaced legacy controls with modern, smooth TrackBar sliders, bidirectionally synchronized in real time with numeric input boxes for pinpoint tuning.
+* **Visual LED Status Indicators:** Replaced plain text strings with custom GDI+ circular LEDs (Green/Red/Gray) to monitor DirectInput Wheel connection, OpenTrack process status, and active Simulator detection at a glance.
+* **Real-Time Telemetry Monitor:** Added a dedicated visual axis gauge widget for Yaw, Pitch, and Roll to provide live visual feedback of the 60Hz UDP stream.
+* **Improved UX & Action Buttons:** Redesigned action buttons (Save, Export, Import, Apply Real-Time) with clean spacing and padding to eliminate any overlapping elements.
 
-1. Download the mod's `.zip` archive.
-2. Extract **ALL** the contents of the ZIP directly into the game's root folder:
-   ```text
-   ...\SteamLibrary\steamapps\common\Assetto Corsa Rally\
-   ```
-3. Overwrite when prompted by Windows to merge the `acr` folder.  
-   > 💡 **Note:** The manual build will add the mod (`LookAhead Steering Controller.exe`) in path (`...\SteamLibrary\steamapps\common\Assetto Corsa Rally\`) and (`dinput8.dll`) (`AssettoCorsaRallyHeadTracking.asi`) in path (`acr\Binaries\Win64\`).
+### 🚗 Car Database & Simulator Compatibility
+* **Expanded Real Car Database:** Updated the list of realistic car steering presets (up to 1080°).
+* **Extended Simulator Support ($knownGames):** Added a comprehensive, up-to-date list of all major racing simulators, rally titles, truck/off-road sims, and classic driving games with wheel and head-tracking support (including Assetto Corsa EVO, Le Mans Ultimate, EA Sports WRC, F1 series, BeamNG.drive, iRacing, Automobilista 2, Richard Burns Rally, and many more).
+
+### 🛠️ Fixes & Stability
+* **Parser & Encoding Fixes:** Resolved PowerShell parser and UTF-8 character encoding issues (such as the degree symbol °) in localized strings.
+* **UI Layout & Spacing Fix:** Adjusted vertical padding and panel heights to prevent sliders from overlapping adjacent labels.
+* **Core Logic Preserved:** The underlying DirectInput engine, asynchronous 60Hz UDP background thread, config.json management, and full IT/EN localization/tooltips remain 100% intact for maximum stability and backward compatibility.
+
+---
+
+### 🇬🇧 New Features
+* **Pitch Axis Integration:** Added full support for dynamic control of the Pitch axis, allowing you to vertically tilt the camera view based on the steering angle.
+* **Dedicated GUI Controls:** Introduced a new Checkbox and NumericUpDown on the right-hand column to enable/disable and finely adjust the intensity of the Pitch Tilt.
+* **Extended UDP Telemetry:** The monitoring label at the bottom right now displays the three active axes (Yaw, Pitch, and Roll) in real-time.
+
+### 🛠️ Improvements & Optimizations
+* **OpenTrack UDP Protocol:** Updated the 48-byte binary buffer to correctly map Pitch at offset 8..15, alongside Yaw (24..31) and Roll (40..47).
+* **Configuration Persistence (`config.json`):** Updated save, load, import, and export functions to include `EnablePitchTilt` and `PitchTiltSens` parameters.
+* **Internationalization (i18n):** Added complete translation strings (Italian / English) and related descriptive tooltips for the new controls.
 
 ---
 
 ## 🛠️ Step-by-Step Setup Guide Without Mod (`dinput8.dll` and `AssettoCorsaRallyHeadTracking.asi`)
 
-> ℹ️ **Notice:** This manual standalone setup guide without mod files will be available as soon as the developers at **SuperNova** include native TrackIR support in an upcoming update.
+> ℹ️ **Notice:** This manual standalone setup guide without mod files will be available as **Soon** as the developers at **SuperNova** include native TrackIR support in an upcoming update.
 
 ### 0. Download & Install Prerequisites
 - Download and install **OpenTrack**:  
@@ -41,24 +57,26 @@ A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate r
 ---
 
 ### 1. Configure LookAhead Steering Controller
-1. Extract the LookAhead Steering Controller archive and launch `LookAhead Steering Controller.exe` as Administrator.
-2. **Set Steering Degrees:** Enter the exact steering lock value (degrees of rotation) required by the car in-game into the LookAhead Steering Controller.
+1. Extract the `LookAhead Steering Controller` archive and launch `LookAhead Steering Controller.exe` as **Administrator**.
+2. **Set Steering Degrees:** Enter the exact steering lock value (degrees of rotation) required by the car in-game into the **LookAhead Steering Controller**.
 3. **Match Wheelbase Settings:** Set the exact same degree value directly in your physical wheelbase software (e.g., Fanatec Fanalab, Simucube True Drive, Thrustmaster Control Panel, Moza Pit House).
 
-> 💡 **Important:** Ensure that the steering lock degrees set in the LookAhead Steering Controller, in the in-game car setup, and in your physical wheelbase software are **100% identical** for optimal telemetric precision and response.
+> 💡 **Important:** Ensure that the steering lock degrees set in the **LookAhead Steering Controller**, in the **in-game car setup**, and in your **physical wheelbase software** are 100% identical for optimal telemetric precision and response.
+
+---
 
 ### 2. OpenTrack Universal Output Mapping
 Open OpenTrack and set **Input** to `UDP over network` (Port `4242`) and **Output** to `freetrack 2.0 Enhanced`.
 
 #### A. Options → Output Matrix
-Configure the mapping matrix so a single profile works universally across both LHD and RHD vehicles.
+Configure the mapping matrix so a single profile works universally across both **LHD** and **RHD** vehicles:
 
 <img width="2560" height="1080" alt="New-opentrack-setup" src="https://github.com/user-attachments/assets/1fe6aa41-39e4-4d23-abe0-0bb33232063e" />
 
 ### 3. Run & Drive
 1. Click **Start** inside OpenTrack.
-2. Verify the status in the LookAhead Steering Controller's System Process Status diagnostic panel.
-3. Launch **Assetto Corsa Rally** and scendi in pista! 🏎️💨
+2. Verify the status in the LookAhead Steering Controller's **System Process Status** diagnostic panel.
+3. Launch **Assetto Corsa EVO** and scendi in pista! 🏎️💨
 
 ---
 
