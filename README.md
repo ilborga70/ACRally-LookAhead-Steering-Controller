@@ -7,7 +7,7 @@
 
 A lightweight, high-frequency (60Hz UDP) telemetry bridge designed to simulate realistic head and camera movement in Assetto Corsa Rally without requiring VR headsets or head-tracking hardware.
 
-## RBR LookAhead Steering Controller v1.2.0.0
+## ACRally LookAhead Steering Controller v1.2.0.0
 
 ### 🇬🇧 What's New & Fixes
 * **Fixed FFB Bumpstop Yaw Inversion (End-Stop Spike Protection):** Resolved an issue on DirectInput steering wheels (e.g., Fanatec CSL bases) where Force Feedback oscillations at full lock caused raw axis spikes (`dwXpos` / `dwRpos`), triggering sudden camera inversion to the opposite side.
