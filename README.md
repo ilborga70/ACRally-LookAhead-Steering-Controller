@@ -76,7 +76,7 @@ Configure the mapping matrix so a single profile works universally across both *
 ### 3. Run & Drive
 1. Click **Start** inside OpenTrack.
 2. Verify the status in the LookAhead Steering Controller's **System Process Status** diagnostic panel.
-3. Launch **Assetto Corsa EVO** and scendi in pista! 🏎️💨
+3. Launch **Assetto Corsa Rally** and scendi in pista! 🏎️💨
 
 ---
 
