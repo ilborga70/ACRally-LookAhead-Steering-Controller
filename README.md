@@ -1,4 +1,4 @@
-# 🏎️ ACRally LookAhead Steering Controller
+# ACRally LookAhead Steering Controller
 
 <img width="800" height="800" alt="1000092343" src="https://github.com/user-attachments/assets/6fc6eded-94d5-49a8-addd-4e978ecc64e5" />
 
