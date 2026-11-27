@@ -1,5 +1,10 @@
 <img width="1393" height="746" alt="RBR LookAhead Steering Controller v1 2 0 0" src="https://github.com/user-attachments/assets/2d351ee3-cec5-4653-bc41-f6d503d41506" />
 
+<img width="1400" height="954" alt="Why Delivers Cleaner" src="https://github.com/user-attachments/assets/17a0aa01-c6b0-4eaf-98c8-818eee8431b4" />
+
+
+---
+
 > **Universal Telemetric Camera Bridge for Assetto Corsa Rally (ACRally)**  
 > *Developed by ilborga70*
 
